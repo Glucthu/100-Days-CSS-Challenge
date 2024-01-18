@@ -27,9 +27,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.center {
+.moon {
+  width: 64px;
+  height: 64px;
+  background-color: rgb(246, 237, 189);
+  border-radius: 50%;
+  box-shadow: rgb(246, 237, 189) 0 0 10px 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 32px;
+  left: 48px;
 }
