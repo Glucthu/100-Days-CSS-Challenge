@@ -8,6 +8,12 @@
   margin: 0;
 }
 
+:root {
+  --big-size: 80px;
+  --medium-size: 40px;
+  --small-size: 10px;
+}
+
 /* use only the available space inside the 400x400 frame*/
 .frame {
   position: absolute;
@@ -34,9 +40,24 @@
   transform: translate(-50%, -50%);
 }
 
-.big-blob {
-  width: 75px;
-  height: 75px;
+.blob {
+  position: absolute;
   background-color: #fff;
   border-radius: 50%;
+}
+
+.big {
+  width: var(--big-size);
+  height: var(--big-size);
+  transform: translate(-50%, -50%);
+}
+
+.medium {
+  width: var(--medium-size);
+  height: var(--medium-size);
+}
+
+.small {
+  width: var(--small-size);
+  height: var(--small-size);
 }
