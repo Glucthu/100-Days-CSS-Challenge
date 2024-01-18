@@ -33,3 +33,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.clock {
+  background-color: rgb(36, 36, 36);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 7px solid rgb(58, 58, 58);
+}
