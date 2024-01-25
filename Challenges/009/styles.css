@@ -149,18 +149,31 @@
 }
 
 .big-drop,
-.small-drop,
+.small-drop {
+  position: absolute;
+  background-color: rgb(127, 193, 249);
+  border-radius: 50%;
+}
+
+.big-drop {
+  width: 10px;
+  height: 10px;
+}
+
+.small-drop {
+  width: 5px;
+  height: 5px;
+}
+
 .big-drop::before,
 .big-drop::after,
 .small-drop::before,
 .small-drop::after {
-  position: absolute;
+  content: "";
+  position: relative;
   display: block;
   background-color: rgb(127, 193, 249);
   border-radius: 50%;
-  content: "";
-  width: 10px;
-  height: 10px;
 }
 
 .forecast {
